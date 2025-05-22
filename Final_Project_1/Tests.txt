@@ -1,0 +1,35 @@
+Comands for tests:
+
+python interfaceinTerminal.py register n_images normal /path/to/image1  /path/to/image2 /path/to/save
+python interfaceinTerminal.py transfer n_images  normal /path/to/image1 /path/to/image2 /path/to/save /path/to/source_annotations.geojson /path/to/save_annotations
+python interfaceinTerminal.py crop /path/to/image.ome.tiff /path/to/save /path/to/region.geojson --annotations_geojson_path /path/to/annotations.geojson
+
+
+python "c:/Users/marqu/OneDrive/Documentos/TFM/Final Project/interfaceinTerminal.py" register normal "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/minidataset3" "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/results/results prueba"
+
+python "c:/Users/marqu/OneDrive/Documentos/TFM/Final Project/interfaceinTerminal.py" transfer normal "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/minidataset3" "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/results/results prueba" "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/minidataset3/2_HE_val.tiff" "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/minidataset3/2_ER_val.tiff" "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/2_HE_val.geojson" "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/results/results prueba"
+
+python "c:/Users/marqu/OneDrive/Documentos/TFM/Final Project/interfaceinTerminal.py" crop "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/uni_dataset/MRXS/HE/VC22B005113A001010.mrxs" "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/results/results prueba" "C:/Users/marqu/OneDrive/Documentos/TFM/base de datos validation/uni_dataset/coords/VC22B005113A001010_HE.geojson"
+
+
+python "c:/Users/marqu/OneDrive/Documentos/TFM/Final Project/interfaceinTerminal.py" crop "/home/usuaris/imatge/marc.sanchez.berges/dataset_prob/uni_dataset/mrxs/VC22B005113A001010.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Project/resluts/" "/home/usuaris/imatge/marc.sanchez.berges/Final Project/resluts/5113.geojson"
+
+
+
+srun -p gpi.compute --mem=256G -c 4 --time=23:59:00 python3 "/home/usuaris/imatge/marc.sanchez.berges/Final_Project_1/interfaceinTerminal.py" crop "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/HE/BE23B009067A002001.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/cropped images/" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Regions to crop/BE23B009067_regiontocrop.geojson" --annotations_geojson_path "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations found/image_YYZ9C0319YY7Y3458YY0-BE23B009067A002001.geojson"
+
+
+srun -p gpi.compute --mem=256G -c 4 --time=23:59:00 python3 "/home/usuaris/imatge/marc.sanchez.berges/Final_Project_1/interfaceinTerminal.py" transfer 3 normal "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/cropped images/BE23B009067A002001_crop.ome.tiff" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/other tincions/BE23B009067/HER2/BE23B009067A002006.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/other tincions/BE23B009067/RE/BE23B009067A002005.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/results/" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations found/cropped/image_YYZ9C0319YY7Y3458YY0-BE23B009067A002001_crop.geojson" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations saved/"
+
+srun -p gpi.compute --mem=128G -c 4 --time=23:59:00 python3 "/home/usuaris/imatge/marc.sanchez.berges/Final_Project_1/interfaceinTerminal.py" transfer 2 normal "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/cropped images/BE23B009067A002001_crop.ome.tiff" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/other tincions/BE23B009067/HER2/BE23B009067A002006.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/results/" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations found/cropped/image_YYZ9C0319YY7Y3458YY0-BE23B009067A002001_crop.geojson" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations saved/"
+
+
+srun -p gpi.compute --mem=256G -c 4 --time=23:59:00 python3 "/home/usuaris/imatge/marc.sanchez.berges/Final_Project_1/interfaceinTerminal.py" transfer 2 normal "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/cropped images/BE23B009067A002001.ome.tiff" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/other tincions/BE23B009067/RE/BE23B009067A002006.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/results/" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations found/cropped/image_YYZ9C0319YY7Y3458YY0-BE23B009067A002001_crop.geojson" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations saved/"
+
+
+srun -p gpi.compute --mem=256G -c 4 --time=23:59:00 python3 "/home/usuaris/imatge/marc.sanchez.berges/Final_Project_1/interfaceinTerminal.py" transfer 2 normal "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/HE/VH23B003503A001002.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/other tincions/VH23B003503/HER2/VH23B003503A001004.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/results/" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations found/ADKAAB9AAC5RC0DLAADF-VH23B003503A001002.geojson" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations saved/"
+
+srun -p gpi.compute --mem=128G -c 4 --time=23:59:00 python3 "/home/usuaris/imatge/marc.sanchez.berges/Final_Project_1/interfaceinTerminal.py" transfer 2 normal "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/cropped images/VH23B003503A001002.ome.tiff" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/other tincions/VH23B003503/HER2/VH23B003503A001004.mrxs" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/results/" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations found/cropped/ADKAAB9AAC5RC0DLAADF-VH23B003503A001002_crop.geojson" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Annotations/Annotations saved/"
+
+
+srun -p gpi.compute --mem=128G -c 4 --time=23:59:00 python3 "/home/usuaris/imatge/marc.sanchez.berges/Final_Project_1/interfaceinTerminal.py" register 2 normal "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/cropped images/VH23B003503A001002.ome.tiff" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/cropped images/VH23B003503A001004.ome.tiff" "/home/usuaris/imatge/marc.sanchez.berges/Final Tests Dataset/Tincions/results/"
