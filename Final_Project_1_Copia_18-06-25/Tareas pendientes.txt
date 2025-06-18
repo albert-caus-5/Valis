@@ -1,0 +1,39 @@
+Cosas que hacer TFM:
+- Enviar mail a Valeria ✅
+
+- Que el programa lea los archivos normales y no los de pip install valis para poder modificar cualquier parte del código ✅
+
+- Arreglar crop para que de un geojson con las anotaciones dentro de la región recortada ✅
+
+- Hacer que el registro solo se le den los paths de las imágenes y no el directorio completo ✅
+
+- Actualizar la interfaz de terminal ✅
+
+- Comprobar que el registro entre un mrxs y un ome.tif es compatible ✅
+
+- Ordenar y comentar todo (añadir algunos prints que avisen de cosas hechas, pensar un nombre, ordenar carpetas y tests...)
+
+- Descargar las imagenes para los tests finales ✅
+
+- Etiquetar las imagenes para los tests finales con su tincion y anotaciones ✅
+
+- Testear las imágenes finales
+
+- Testear eficiencia y tiempo de los diferentes tipos de registro
+
+- Escribir memoria
+
+    -Abstract ✅
+    -Acknowledgements
+    -Revision history and approval record
+    -Table of contents
+    -Introduction ✅
+    -State of the art of the technology used or applied in this thesis ✅
+    -Methodology / project development ✅
+    -Results
+    -Budget ✅
+    -Environment Impact (optional)
+    -Conclusions and future development
+    -Bibliography
+    -Appendices (optional)
+    -Glossary

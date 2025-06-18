@@ -1,0 +1,93 @@
+{
+  "version": "0.5.1",
+  "createTimestamp": 1747211965390,
+  "modifyTimestamp": 1747211965390,
+  "uri": "file:/home/usuaris/imatge/albert.caus/test/Final_Project_1/QuPath/project.qpproj",
+  "lastID": 7,
+  "images": [
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.openslide.OpenslideServerBuilder",
+        "uri": "file:/mnt/work/users/josep/WSI/JX22B011416/JX22B011416A001001.mrxs",
+        "args": []
+      },
+      "entryID": 1,
+      "randomizedName": "27e90dd7-14ef-4027-8bbb-15f51ccf2433",
+      "imageName": "JX22B011416A001001.mrxs",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.openslide.OpenslideServerBuilder",
+        "uri": "file:/mnt/work/users/josep/WSI/JX22B011416/JX22B011416A001002.mrxs",
+        "args": []
+      },
+      "entryID": 2,
+      "randomizedName": "6038d521-2630-49b7-9f7e-e685c5c46929",
+      "imageName": "JX22B011416A001002.mrxs",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.openslide.OpenslideServerBuilder",
+        "uri": "file:/mnt/work/users/josep/WSI/JX22B011416/JX22B011416A001002_A20230326162506.mrxs",
+        "args": []
+      },
+      "entryID": 3,
+      "randomizedName": "d330a32c-29a9-4cd7-ad64-6ef49d2dfbd8",
+      "imageName": "JX22B011416A001002_A20230326162506.mrxs",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.openslide.OpenslideServerBuilder",
+        "uri": "file:/mnt/work/users/josep/WSI/JX22B011416/JX22B011416A001002_A20230326162539.mrxs",
+        "args": []
+      },
+      "entryID": 4,
+      "randomizedName": "a7d2f952-c98f-4ac8-b682-d40ce817c602",
+      "imageName": "JX22B011416A001002_A20230326162539.mrxs",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.openslide.OpenslideServerBuilder",
+        "uri": "file:/mnt/work/users/josep/WSI/JX22B011416/JX22B011416A001003.mrxs",
+        "args": []
+      },
+      "entryID": 5,
+      "randomizedName": "353ca165-f280-4f35-bb6e-55e61d273713",
+      "imageName": "JX22B011416A001003.mrxs",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.openslide.OpenslideServerBuilder",
+        "uri": "file:/mnt/work/users/josep/WSI/JX22B011416/JX22B011416A001004.mrxs",
+        "args": []
+      },
+      "entryID": 6,
+      "randomizedName": "cc1d7029-8e4b-4dc5-8d97-45407ae4a345",
+      "imageName": "JX22B011416A001004.mrxs",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.lib.images.servers.openslide.OpenslideServerBuilder",
+        "uri": "file:/mnt/work/users/josep/WSI/JX22B011416/JX22B011416A001005.mrxs",
+        "args": []
+      },
+      "entryID": 7,
+      "randomizedName": "6edb290b-59da-4f87-9cb1-0bc6b9c3e664",
+      "imageName": "JX22B011416A001005.mrxs",
+      "metadata": {}
+    }
+  ]
+}
